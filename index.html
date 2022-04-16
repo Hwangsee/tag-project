@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/66008b4f43.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="script.js"></script>
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<main role="main" class="container">
+		<!-- 태그 영역 시작 -->
+		<!-- 태그 선택 영역 시작 -->
+		<section class="wrappers">
+			<div>
+				<div class="col-auto" id="header-text">
+					<h1 class="swing" onclick="location.reload();">#_태그해봐!</h1>
+				</div>
+			</div>
+			<!-- 구글 스프레드시트 테이블 영역 시작 -->
+			<div id="tagTable" class="table"></div>
+			<!-- 구글 스프레드시트 테이블 영역 끝 -->
+			<br/>
+
+			<div class="tags">
+				<div class="wrapper-tags focus">
+					<div class="view-tags">
+						<input type="text" class="input-tag">
+					</div>
+				</div>
+
+				<div class="show-error length">태그는 1글자에서 20글자 사이로 입력해주세요</div>
+				<div class="show-error already">중복 태그는 입력할 수 없습니다.</div>
+					<div class="show-count-all">
+					<div class="count-character-tag">
+						<span>5</span>
+						글자까지 입력 가능합니다.
+					</div>
+				</div>
+				<div class="wrapper-btn">
+					<button class="btn btn-info btn-block add-tags" data-layer="layer1"># 태그 생성</button>
+					<button class="btn btn-info btn-block add-tags" data-layer="layer2">, 콤마 생성</button>
+					<button class="btn btn-info btn-block add-tags" data-layer="layer3"># , 둘 다 생성</button>
+				</div>
+			</div>
+			<!-- 태그 선택 영역 끝 -->
+			<!-- 태그 보여주기 영역 시작 -->
+			<div class="show-all-tags">
+				<div class="alert alert-danger text-center hide">태그를 생성해주세요.</div>
+				<div class="show-tags hide">
+					<h3 id="tagTitle" class="title tag-title">태그 복사하기<span>&nbsp;<i class="fa fa-clipboard"></i></span></h3>
+					<div class="wrapper-view-tags">
+						<i class="fa fa-close hide-array"></i>
+						<div id="tagsBox" class="tags">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 태그 보여주기 영역 끝 -->
+		</section>
+		<!-- 태그 영역 끝 -->
+	</main>
+</body>
+</html>
